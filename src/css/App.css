@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: aliceblue;
 }
 
 .App-logo {
@@ -25,4 +26,11 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.BottomNav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
 }
