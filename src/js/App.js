@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import '../css/App.css';
+import AddIcon from '../assets/addIcon.svg';
 import {BottomNavigation, BottomNavigationAction, AppBar, Typography, IconButton, Toolbar} from '@material-ui/core'
-import {AssignmentOutlined, Add, LibraryAddOutlined, PersonOutlined, ChatBubbleOutline, ArrowBackIos} from '@material-ui/icons'
+import {AssignmentOutlined, LibraryAddOutlined, PersonOutlined, ChatBubbleOutline, ArrowBackIos} from '@material-ui/icons'
+import Icon from "@material-ui/core/Icon/Icon";
 
 class App extends Component {
     constructor(props){
@@ -23,6 +25,10 @@ class App extends Component {
               marginLeft: -12,
               marginRight: 20,
           },
+          addBtn: {
+              borderRadius: "25px",
+              backgroundColor: "#66be73",
+          }
       };
     return (
       <div className="App">
@@ -38,11 +44,11 @@ class App extends Component {
           </AppBar>
 
           <BottomNavigation className={"BottomNav"}>
-              <BottomNavigationAction label="Feed" value="0" icon={<AssignmentOutlined/>} />
-              <BottomNavigationAction label="Log" value="1" icon={<LibraryAddOutlined/>} />
-              <BottomNavigationAction label="New" value="2" icon={<Add/>} />
-              <BottomNavigationAction label="Chat" value="3" icon={<ChatBubbleOutline/>} />
-              <BottomNavigationAction label="Profile" value="4" icon={<PersonOutlined/>} />
+              <BottomNavigationAction label="Feed" value="0" icon={<AssignmentOutlined/>} tabIndex={0} />
+              <BottomNavigationAction label="Log" value="1" icon={<LibraryAddOutlined/>} tabIndex={1} />
+              <BottomNavigationAction label="New" value="2" icon={<Icon><img src={AddIcon} alt={'add'}/> </Icon>} tabIndex={2} classes={styles.addBtn} />
+              <BottomNavigationAction label="Chat" value="3" icon={<ChatBubbleOutline/>} tabIndex={3}/>
+              <BottomNavigationAction label="Profile" value="4" icon={<PersonOutlined/>} tabIndex={4}/>
           </BottomNavigation>
       </div>
     );
