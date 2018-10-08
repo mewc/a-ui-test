@@ -4,6 +4,7 @@ import AddIcon from '../assets/addIcon.svg';
 import {BottomNavigation, BottomNavigationAction, AppBar, Typography, IconButton, Toolbar} from '@material-ui/core'
 import {AssignmentOutlined, LibraryAddOutlined, PersonOutlined, ChatBubbleOutline, ArrowBackIos} from '@material-ui/icons'
 import Icon from "@material-ui/core/Icon/Icon";
+import Feed from "./Feed";
 
 class App extends Component {
     constructor(props){
@@ -25,10 +26,6 @@ class App extends Component {
               marginLeft: -12,
               marginRight: 20,
           },
-          addBtn: {
-              borderRadius: "25px",
-              backgroundColor: "#66be73",
-          }
       };
     return (
       <div className="App">
@@ -42,6 +39,8 @@ class App extends Component {
                   </Typography>
               </Toolbar>
           </AppBar>
+
+          {<Feed/>}
 
           <BottomNavigation className={"BottomNav"}>
               <BottomNavigationAction label="Feed" value="0" icon={<AssignmentOutlined/>} tabIndex={0} />
