@@ -16,25 +16,16 @@ class App extends Component {
     }
   render() {
       const styles = {
-          root: {
-              flexGrow: 1,
-          },
-          grow: {
-              flexGrow: 1,
-          },
-          menuButton: {
-              marginLeft: -12,
-              marginRight: 20,
-          },
+          root: {marginLeft: -12, marginRight: 15}
       };
     return (
       <div className="App">
           <AppBar position="static">
               <Toolbar>
-                  <IconButton className={styles.menuButton} color="inherit" aria-label="Menu">
+                  <IconButton classes={styles.root} color="inherit" aria-label="Menu">
                       <ArrowBackIos />
                   </IconButton>
-                  <Typography variant="h6" color="inherit" className={styles.grow}>
+                  <Typography variant="h6" color="inherit" >
                       {this.state.title}
                   </Typography>
               </Toolbar>
