@@ -11,7 +11,7 @@ class App extends Component {
     constructor(props){
         super(props);
         this.state = {
-            activeIndex: 0,
+            activeIndex: 1,
             title: "feed"
         }
     }
@@ -36,18 +36,25 @@ class App extends Component {
     };
 
     click(a){
+        let title = [{title: 'feed'},
+            {title: 'stats'},
+            {title: 'new'},
+            {title: 'chat'},
+            {title: 'profile'}];
+        
         this.setState({
             ...this.state,
-            activeIndex: a
+            activeIndex: a,
+            title: title[a].title
         });
     }
 
   render() {
       const styles = {
-          root: {marginLeft: -12, marginRight: 15}
+          root: {marginLeft: '-12', marginRight: '15'}
       };
     return (
-      <div className="App">
+      <div className="App" >
           <AppBar position="static">
               <Toolbar>
                   <IconButton classes={styles.root} color="inherit" aria-label="Menu">
