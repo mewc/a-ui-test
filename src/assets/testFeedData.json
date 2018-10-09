@@ -13,6 +13,7 @@
           "img": "2.jpg"
         }
       ],
+      "value": 12,
       "timestamp": 123301498
     },
     {
@@ -29,6 +30,7 @@
           "img": "3.jpg"
         }
       ],
+      "value": 20,
       "timestamp": 1538901498
     },
     {
@@ -44,6 +46,7 @@
           "img": "5.jpg"
         }
       ],
+      "value": 10,
       "timestamp": 1538801498
     },
     {
@@ -60,6 +63,7 @@
           "img": "7.jpg"
         }
       ],
+      "value": 11,
       "timestamp": 1538931498
     },
     {
@@ -76,6 +80,7 @@
           "img": "9.jpg"
         }
       ],
+      "value": 2,
       "timestamp": 14229999
     },
     {
@@ -92,6 +97,7 @@
           "img": "11.jpg"
         }
       ],
+      "value": 7,
       "timestamp": 1538931498
     }
   ]

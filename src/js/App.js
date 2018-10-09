@@ -41,7 +41,7 @@ class App extends Component {
             {title: 'new'},
             {title: 'chat'},
             {title: 'profile'}];
-        
+
         this.setState({
             ...this.state,
             activeIndex: a,
