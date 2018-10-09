@@ -9,9 +9,11 @@ import Grid from "@material-ui/core/Grid/Grid";
 import Button from "@material-ui/core/Button/Button";
 
 import { withStyles, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import AvatarItem from "./AvatarItem";
 
 
-let styles = theme => ({
+
+const styles = theme => ({
     root: {
         ...theme.mixins.gutters(),
         margin: '15px 15px 40px 15px',
@@ -20,7 +22,8 @@ let styles = theme => ({
         border: '2px solid transparent',
         borderImage: 'linear-gradient(to right, rgba(177,222,247,1) 0%, rgba(32,124,229,1) 100%)',
         borderImageSlice: 1,
-        flexGrow: 1
+        flexGrow: 1,
+        padding: '10px'
     },
     avatar: {
         margin: '10px',
@@ -79,11 +82,11 @@ class FeedCard extends React.Component {
                         <Grid item>
                             {(this.props.item.status === "challenged")?
                                 [<Grid container xs={12}>
-                                    <Grid item><Avatar alt={'person'} src={'/1.jpg'}/></Grid>,
-                                    <Grid item ><Avatar alt={'person'} src={'/2.jpg'} style={{marginLeft: '-12px'}}/></Grid>
+                                    <AvatarItem src={'/1.jpg'}/>
+                                    <AvatarItem src={'/2.jpg'}  style={{marginLeft: '-12px'}}/>
                                 </Grid>]
                             :
-                            <Avatar alt={'person'} src={'/1.jpg'}/>}
+                                    <AvatarItem src={'/1.jpg'}/>}
                         </Grid>
                         <Grid item xs>
                             {this.buttonRenderer()}

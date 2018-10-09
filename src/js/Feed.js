@@ -10,7 +10,7 @@ class Feed extends Component {
         let testData = data.feed;
         return <React.Fragment>
             {testData.map((item,i) => {
-                return <FeedCard key={i} item={item} style={{padding: '10px'}}/>;
+                return <FeedCard key={i} item={item} style={{padding: '10px', margin: '10px'}}/>;
                 }
             )}
         </React.Fragment>
