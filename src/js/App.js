@@ -6,12 +6,13 @@ import {AssignmentOutlined, LibraryAddOutlined, PersonOutlined, ChatBubbleOutlin
 import Icon from "@material-ui/core/Icon/Icon";
 import Feed from "./Feed";
 import Wager from "./Wager";
+import Details from "./Details";
 
 class App extends Component {
     constructor(props){
         super(props);
         this.state = {
-            activeIndex: 1,
+            activeIndex: 3,
             title: "feed"
         }
     }
@@ -27,7 +28,7 @@ class App extends Component {
             case 2:
                 return <p>new bet coming eventually</p>;
             case 3:
-                return <p>chat coming eventually</p>;
+                return <Details/>;
             case 4:
                 return <p>Made by Michael Carter - m@mewc.info</p>;
             default:

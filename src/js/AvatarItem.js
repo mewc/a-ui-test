@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import '../css/App.css';
-import data from '../assets/testFeedData';
-import FeedCard from "./FeedCard";
 import Avatar from "@material-ui/core/Avatar/Avatar";
 import Grid from "@material-ui/core/Grid/Grid";
 import Typography from "@material-ui/core/Typography/Typography";

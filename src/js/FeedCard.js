@@ -73,7 +73,7 @@ class FeedCard extends React.Component {
 
     render() {
         const {classes} = this.props;
-
+            console.log(this.props.item);
         return <div>
             {(this.state.gradient)?
             <Paper styles={{borderImage: this.state.gradient}} className={classes.root} elevation={1}>
