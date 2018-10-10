@@ -7,6 +7,7 @@ import Icon from "@material-ui/core/Icon/Icon";
 import Feed from "./Feed";
 import Wager from "./Wager";
 import Details from "./Details";
+import NewWager from "./NewWager";
 
 class App extends Component {
     constructor(props){
@@ -26,7 +27,7 @@ class App extends Component {
             case 1:
                 return <Wager/>;
             case 2:
-                return <p>new bet coming eventually</p>;
+                return <NewWager/>;
             case 3:
                 return <Details/>;
             case 4:
