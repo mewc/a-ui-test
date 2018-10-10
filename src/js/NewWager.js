@@ -45,12 +45,12 @@ class Wager extends Component {
                 value={(this.state.selected)?this.state.selected.first:''}
                 disabled={(this.state.selected)}
             />
-
+            {(this.state.selected)?'':
             <List>
                 {this.state.names.map((i, k) => {
                     return <ListItem key={k}><Button onClick={() => this.select(i)}>{i.first}</Button></ListItem>;
             })}
-            </List>
+            </List>}
 
 
         </React.Fragment>
