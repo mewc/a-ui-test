@@ -26,7 +26,7 @@ class Wager extends Component {
     nameFinder = (e) => {
         let input = e.target.value;
         let filteredNames = NameData.names.filter(name =>
-            name.first.indexOf(input) === 0);
+            name.first.indexOf(input) === 0 && input > 0);
         this.setState({...this.state, names: filteredNames, value: input});
 
     }
