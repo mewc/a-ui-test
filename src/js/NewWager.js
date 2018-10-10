@@ -27,7 +27,7 @@ class Wager extends Component {
         let input = e.target.value;
         let filteredNames = NameData.names.filter(name =>
             name.first.indexOf(input) === 0);
-        this.setState({...this.state, names: filteredNames});
+        this.setState({...this.state, names: filteredNames, value: input});
 
     }
 
@@ -42,7 +42,7 @@ class Wager extends Component {
             <Typography>I Bet</Typography>
             <TextField
                 onChange={this.nameFinder}
-                value={(this.state.selected)?this.state.selected.first:''}
+                value={(this.state.selected)?this.state.selected.first:this.state.value}
                 disabled={(this.state.selected)}
             />
             {(this.state.selected)?'':
