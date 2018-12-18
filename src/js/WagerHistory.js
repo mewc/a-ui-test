@@ -32,7 +32,6 @@ class WagerHistory extends Component {
     }
 
     render() {
-        let {classes} = this.props;
         return <div>
             <Grid container>
                         <Typography variant={"caption"} style={{padding: '10px'}}>Wager History</Typography>

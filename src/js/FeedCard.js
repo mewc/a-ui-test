@@ -2,13 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import Avatar from "@material-ui/core/Avatar/Avatar";
 import ta from 'time-ago';
-import person1 from '../assets/1.jpg'
 import Grid from "@material-ui/core/Grid/Grid";
 import Button from "@material-ui/core/Button/Button";
 
-import { withStyles, MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import AvatarItem from "./AvatarItem";
 
 

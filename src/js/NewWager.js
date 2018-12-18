@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../css/App.css';
-import Paper from "@material-ui/core/Paper/Paper";
 import {withStyles} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography/Typography";
 import TextField from "@material-ui/core/TextField/TextField";
@@ -37,7 +36,6 @@ class Wager extends Component {
     }
 
     render() {
-        let {classes} = this.props;
         return <React.Fragment>
             <Typography>I Bet</Typography>
             <TextField

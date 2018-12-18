@@ -1,12 +1,9 @@
 import React, {Component} from 'react';
 import '../css/App.css';
 import Grid from "@material-ui/core/Grid/Grid";
-import {withStyles} from "@material-ui/core";
 import CircularProgress from "@material-ui/core/CircularProgress/CircularProgress";
-import purple from "@material-ui/core/es/colors/purple";
 import red from "@material-ui/core/es/colors/red";
 import green from "@material-ui/core/es/colors/green";
-import Typography from "@material-ui/core/Typography/Typography";
 
 
 class WagerHeadToHeadSummary extends Component {

@@ -4803,11 +4803,6 @@ jest@20.0.4:
   dependencies:
     jest-cli "^20.0.4"
 
-jquery@>=1.2.3:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
-  integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
-
 js-base64@^2.1.9:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.3.tgz#2e545ec2b0f2957f41356510205214e98fad6582"
@@ -7927,13 +7922,6 @@ time-stamp@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/time-stamp/-/time-stamp-2.0.0.tgz#95c6a44530e15ba8d6f4a3ecb8c3a3fac46da357"
   integrity sha1-lcakRTDhW6jW9KPsuMOj+sRto1c=
-
-timeago@latest:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/timeago/-/timeago-1.6.3.tgz#162a1adae99356297df59339837d09f1b0f36465"
-  integrity sha512-x97d1X1KsNapWJTgCOOAy/59XagYu2WsDTAH/yvPsWi5bqtGbLPaVZBv3HZ3jTpakHR+JGGyrI9qC0yuvIAvnQ==
-  dependencies:
-    jquery ">=1.2.3"
 
 timed-out@^4.0.0:
   version "4.0.1"

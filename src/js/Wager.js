@@ -4,9 +4,6 @@ import Paper from "@material-ui/core/Paper/Paper";
 import {withStyles} from "@material-ui/core";
 import WagerHeadToHeadSummary from "./WagerHeadToHeadSummary";
 import WagerBreakdowns from "./WagerBreakdowns";
-import CircularProgress from "@material-ui/core/CircularProgress/CircularProgress";
-import purple from "@material-ui/core/es/colors/purple";
-import Grid from "@material-ui/core/Grid/Grid";
 import WagerHistory from "./WagerHistory";
 import Divider from "@material-ui/core/Divider/Divider";
 
